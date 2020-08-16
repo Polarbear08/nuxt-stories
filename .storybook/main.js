@@ -5,6 +5,11 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
+    "@storybook/addon-essentials",
+  ],
+  webpackFinal: async (config) => {
+    config.mode = 'production'
+    config.optimization.splitChunks.chunks = "initial"
+    return config
+  }
 }
