@@ -4,7 +4,9 @@
       <div
         :style="{ background: card.background }"
         style="with: 100%; height: 100%;"
-      ></div>
+      >
+        <p>On The Road</p>
+      </div>
     </template>
   </vue-card-stack>
 </template>
