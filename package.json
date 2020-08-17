@@ -39,6 +39,7 @@
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "react-is": "^16.13.1",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "webpack-bundle-analyzer": "^3.8.0"
   }
 }
