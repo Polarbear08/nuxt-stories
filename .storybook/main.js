@@ -7,9 +7,4 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
   ],
-  webpackFinal: async (config) => {
-    config.mode = 'production'
-    config.optimization.splitChunks.chunks = "initial"
-    return config
-  }
 }
