@@ -54,6 +54,11 @@ export default {
           icon: 'lightbulb',
           to: { name: 'inspire' },
         },
+        {
+          title: 'Playground',
+          icon: 'home',
+          to: { name: 'playground' },
+        },
       ],
     }
   },

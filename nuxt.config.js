@@ -4,6 +4,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-mode
    */
   mode: 'spa',
+  server: {
+    host: '0.0.0.0',
+    port:3000,
+  },
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -34,7 +38,12 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    {
+      src: '@/plugins/plugin',
+      mode: 'client',
+    },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
